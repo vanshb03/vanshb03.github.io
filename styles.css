@@ -1,5 +1,18 @@
+/*
+SPECIFICITY CHALLENGE:
+Both "ul" and ".skills-list" are trying to set the list-style property on the same <ul> element
+in the Skills section which ends upcreating a conflict.
+The CSS specificity scoring is detemined by the following:
+(ID selectors, Class selectors, Element selectors) in that order.
+"ul" is an element selector with a specificity score of (0, 0, 1) --> element selector wins
+".skills-list" is a class selector with a specificity score of (0, 1, 0) --> class selector wins
+
+The class selector ".skills-list" WINS because (0,1,0) is greater than (0,0,1) and as a result the skills list 
+renders with no bullets (list-style: none), while every other <ul> on the page keeps the disc bullets from the element selector.
+*/
+
 /* 
-Element selector for list styling
+Element selector for list styling 
 */
 ul {
   list-style: disc;
@@ -7,7 +20,7 @@ ul {
 }
 
 /* 
-Class selector for skills list
+Class selector for skills list that wins over "ul" above 
 */
 .skills-list {
   list-style: none;
