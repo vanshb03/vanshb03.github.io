@@ -1,0 +1,222 @@
+/* 
+Element selector for list styling
+*/
+ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+/* 
+Class selector for skills list
+*/
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* 
+   Color palette fetched from tailwind styling onto hex color codes as no inline styling was to be used for this submission from Original Portfolio vansh.nyc:
+   gray-1:  #fcfcfc   
+   gray-4:  #e8e8e8   
+   gray-8:  #bbbbbb
+   gray-11: #646464   
+   gray-12: #202020
+   pink-3:  #fee9f5   
+   pink-9:  #d6409f   
+   pink-11: #c2298a 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+Body color and font family fetched from Original Portfolio: vansh.nyc
+*/
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.09px;
+  color: #202020;
+  background-color: #fcfcfc;
+}
+
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fcfcfc;
+  object-fit: cover;
+}
+
+::selection {
+  background-color: #fee9f5;
+  color: #c2298a;
+}
+
+header {
+  background-color: #202020;
+  color: #fcfcfc;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin-top: 0.75rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* 
+Class selectors 
+*/
+.subtitle {
+  font-size: 1.1rem;
+  color: #bbbbbb;
+  margin-top: 0.25rem;
+  font-weight: 400;
+}
+
+.subtitle-2 {
+  font-size: 0.9rem;
+  color: #646464;
+  margin-top: 0.25rem;
+  font-weight: 300;
+}
+
+nav {
+  background-color: #202020;
+  border-top: 1px solid #333;
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.5;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid #d6409f;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  color: #202020;
+}
+
+h3 {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #646464;
+}
+
+h4 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 500;
+  color: #646464;
+}
+
+/* 
+Table styling
+*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #e8e8e8;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #202020;
+  color: #fcfcfc;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/*
+Skills list styling
+*/
+.skills-list li {
+  background-color: #d6409f;
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+}
+
+/*
+Projects styling
+*/
+.project {
+  background-color: #fcfcfc;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project h3 {
+  color: #c2298a;
+}
+
+/*
+Contact styling
+*/
+#contact a {
+  color: #c2298a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+#contact a:hover {
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #202020;
+  color: #bbbbbb;
+  font-size: 0.9rem;
+}
